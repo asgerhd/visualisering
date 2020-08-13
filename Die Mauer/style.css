@@ -1,3 +1,13 @@
+:root{
+    --main-hue: calc(360 - 59);
+
+    --main-color: hsl(var(--main-hue), 100%, 50%);
+    --white-text-main: hsl(var(--main-hue), 10%, 100%);
+    --light-main-color: hsl(var(--main-hue),71%, 82%);
+    --medium-dark-main-color: hsl(var(--main-hue),81%, 37%);
+    --dark-main-color: hsl(var(--main-hue),94%, 28%);
+}
+
 /* Reset of all margins and paddings */
 
 *
@@ -20,7 +30,7 @@ body
 
 header
 {
-    background-color: #CCCCCC;
+    background-color: var(--main-color);/*#CCCCCC;*/
     height: 100px;
 }
 
@@ -40,13 +50,13 @@ nav ul
 nav ul a, footer a
 {
     text-decoration: none;
-    color: white;
+    color: var(--white-text-main);/*white;*/
     padding: 0 2em;
 }
 
 nav ul li:hover
 {
-    background-color: #BBBFBA;
+    background-color: var(--light-main-color);/*#BBBFBA;*/
 }
 
 /* Top navigation styling (and some also apply for footer) */
@@ -54,8 +64,8 @@ nav ul li:hover
 nav.top, footer
 {
     height: 40px;
-    background-color: #565952;
-    color: white;
+    background-color: var(--medium-dark-main-color);/*#565952;*/
+    color: var(--white-text-main);/*white;*/
 }
 
 nav.top ul li
@@ -70,12 +80,12 @@ nav.side
     float: left;
     height: 100%;
     width: 15%;
-    background-color: #BBBFBA;
+    background-color: var(--light-main-color);/*#BBBFBA;*/
 }
 
 nav.side ul
 {
-    background-color: rgba(50, 54, 84, 0.8);
+    background-color: var(--dark-main-color);/*rgba(50, 54, 84, 0.8);*/
 }
 
 nav.side ul li a
@@ -136,15 +146,15 @@ article img
 
 h2
 {
-    color: #BBBFBA;
+    color: var(--light-main-color);/*#BBBFBA;*/
     margin-bottom: 1em;
     padding-bottom: 1em;
-    border-bottom: 1px solid #BBBFBA;
+    border-bottom: 1px solid var(--light-main-color);/*#BBBFBA;*/
 }
 
 h3
 {
-    color: rgba(50, 54, 84, 0.9);
+    color: var(--dark-main-color);/*rgba(50, 54, 84, 0.9);*/
     line-height: 14px;
     padding-bottom: 2px;
 }
