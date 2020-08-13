@@ -3,12 +3,85 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --main-hue: 112;
+
+    --main-color: hsl(var(--main-hue),44%, 81%);
+    --light-main-color: hsl(var(--main-hue),44%, 91%);
+    --medium-dark-main-color: hsl(var(--main-hue),44%, 31%);
+    --dark-main-color: hsl(var(--main-hue),44%, 11%);
+}
+header{
+    background-color: var(--medium-dark-main-color);
+    color: var(--light-main-color);
+    height: 100px;
+    text-align: center;
+    font-size: 2re
+}
+h1{
+    line-height: 100px;
+}
 header img, header h1{
     display: inline-block;
 }
-nav ul li{
-    display: inline-block;
+nav{
+    color: var(--light-main-color);
+    background-color: var(--dark-main-color);
+    font-size: 0.75rem;
+    height: 24px;
+    line-height: 24px;
+    
 }
-.Yjpg{
+nav ul li{
+    margin-left: 1rem;
+    display: inline-block;
+    /*border-right: 1px solid black;
+    padding-right: 1rem;*/
+}
+nav ul li:last-child
+{
+    border-right: none;
+    padding-right: 0rem;
+}
+nav ul li a{
+    border-right: 1px solid black;
+    padding-right: 1rem;
+}
+table{
+    width: 100%;
+}
+td{    
+    height: 100%;
+}
+td h2{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+td p{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+td p:last-child{
+margin-bottom: 16rem;
+}
+td img{
+    margin: 1rem;
+    width: 500px;
+}
+footer{
+    color: var(--dark-main-color);
+    background-color: var(--main-color);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.FloatRight{
     float: right;
+}
+.FloatLeft{
+    float: left;
 }
