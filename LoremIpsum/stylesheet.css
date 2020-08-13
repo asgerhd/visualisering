@@ -16,7 +16,7 @@ header{
     color: var(--light-main-color);
     height: 100px;
     text-align: center;
-    font-size: 2re
+    font-size: 2rem;
 }
 h1{
     line-height: 100px;
@@ -29,8 +29,7 @@ nav{
     background-color: var(--dark-main-color);
     font-size: 0.75rem;
     height: 24px;
-    line-height: 24px;
-    
+    line-height: 24px;    
 }
 nav ul li{
     margin-left: 1rem;
