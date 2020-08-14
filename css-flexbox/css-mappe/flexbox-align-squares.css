@@ -1,0 +1,59 @@
+body{
+    max-width: 600px;
+    margin: 0 auto;
+}
+main{
+    width: 570px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main>div{
+    width: 180px;
+    height: 180px;
+    background-color: #999;
+    margin: 5px;
+    display: flex;
+}
+.parent1{
+    align-items: flex-start;    
+    justify-content: flex-start;
+}
+.parent2{    
+    align-items: flex-start;    
+    justify-content: center;
+}
+.parent3{    
+    align-items: flex-start;    
+    justify-content: flex-end;
+}
+.parent4{    
+    align-items: center;    
+    justify-content: flex-start;
+}
+.parent5{    
+    align-items: center;    
+    justify-content: center;
+}
+.parent6{    
+    align-items: center;    
+    justify-content: flex-end;
+}
+.parent7{    
+    align-items: flex-end;    
+    justify-content: flex-start;
+}
+.parent8{    
+    align-items: flex-end;    
+    justify-content: center;
+}
+.parent9{    
+    align-items: flex-end;    
+    justify-content: flex-end;
+}
+div>div{
+    width: 57px;
+    height: 57px;
+    background-color: orange;
+}
