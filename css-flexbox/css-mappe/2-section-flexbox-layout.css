@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+}
+div{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 50px;
+    background-color: #666;
+}
+section{
+    background-color: #ccc;
+    height: 100vh;
+}
