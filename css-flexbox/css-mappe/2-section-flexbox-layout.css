@@ -11,5 +11,5 @@ header{
 }
 section{
     background-color: #ccc;
-    height: 100vh;
+    height: calc(100vh - 50px);
 }

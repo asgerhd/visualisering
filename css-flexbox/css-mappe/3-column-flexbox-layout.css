@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+header, footer{
+    height: 50px;
+    background-color: #666;
+    color: #ffff;
+}
+section>div{
+    background-color: #ccc;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+main{
+    order: 2;
+    background-color: #ccc;
+    width: 80%;
+    height: 100%;
+}
+aside{
+    background-color: #999;
+    width: 20%;
+    height: 100%;
+}
+aside:first-child{
+    order: 1;
+}
+aside:last-child{
+    order: 3;
+}
