@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: hsl(209, 10%, 100%);
+    text-transform: uppercase;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header, footer{
+    background-color: hsl(209, 50%, 30%);
+    height: 80px;
+}
+header, main, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Hamburger menu */
+header input{
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 4;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+header img{
+    width: 30px;
+    z-index: 3;
+    position: absolute;
+    left: 10px;
+    display: block;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: hsl(209, 30%, 60%);
+    transform: translateX(-100%);
+    transition-delay: 0.5s;
+}
+header ul li{
+    padding: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+}
+input~ .exitmenuicon{
+    display: none;
+}
+input:checked~ .exitmenuicon{
+    display: block;
+}
+input:checked~ .menuicon{
+    display: none;
+}
+input:checked~ ul{
+    transform: none;
+}
+/* main animation */
+main{
+    background-color: hsl(209, 20%, 80%);
+    height: calc(100%);
+}
+main h2{
+    animation: anime 2s;
+}
+@keyframes anime{
+    0% { transform: scale(0.1);
+        opacity: 0.1;}
+    60% {transform: scale(1.2);
+        opacity: 1;}
+    100% {transform: scale(0.1);}
+}
