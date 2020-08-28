@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    
+    padding: 0;
+}
+html{
+    overflow-x: hidden;
+}
+nav{
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+    float: right;
+    right: 42px;
+
+}
+input{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    right: 400px;
+    top: 300px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+input:checked~ .menu2{
+    transform: rotate(9000045deg) scale(1.09);
+    transition: linear 1.0s;
+    background: linear-gradient(270deg, #ff5100, #fffa00, #18ff00, #00ffd4, #008cff, #0600ff, #a300ff, #f200ff, #ff006e, #ff0036, #fb0000, #fb9200, #f5fb00, #a8fb00, #4ffb00, #34bd34, #00fbe7, #00d8fb, #0074fb, #3d00fb, #a100fb, #ee00fb, #fb008e, #fb0009);
+    animation: rainbow 1s ease infinite;
+    background-size: 2000rem;
+
+}
+input:checked~ .menu1, input:checked~ .menu3{
+    background-color: pink;
+    transform: scale(0);
+    transition: linear 1.0;
+}
+input:checked~ .menu4{
+    transform: rotate(-9000045deg)scale(1.09);
+    animation-name: menu4;
+    transition: linear 1.0s;
+    background: linear-gradient(270deg, #ff5100, #fffa00, #18ff00, #00ffd4, #008cff, #0600ff, #a300ff, #f200ff, #ff006e, #ff0036, #fb0000, #fb9200, #f5fb00, #a8fb00, #4ffb00, #34bd34, #00fbe7, #00d8fb, #0074fb, #3d00fb, #a100fb, #ee00fb, #fb008e, #fb0009);
+    animation: rainbow 1s ease infinite;
+    background-size: 2000rem;
+}
+div{
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #000;
+    position: absolute;
+    right: 400px;
+    top: 300px;
+    /* margin-right: 800px; */
+    z-index: 1;
+    transition: linear 1.0s;
+    transition-delay: 0,000001s;    
+}
+.menu1{   
+    margin-top: 75px;
+}
+.menu2, .menu4, .menu5{    
+    margin-top: 150px;
+}
+.menu3{    
+    margin-top: 225px;  
+}
+@keyframes rainbow {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes rotate-90-cw {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
