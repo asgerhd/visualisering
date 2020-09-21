@@ -1,0 +1,19 @@
+/* CSS Document */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* margin: 100px;
+    border: gray 10px solid;
+    height: 2150px;
+    width: 1150px;
+    display: grid;
+    grid-template-rows: 60px 240px 400px 340px 360px 340px 300px 60px; */
+    display: grid;
+    grid-template-areas: "";
+}
+body>div{
+    border: gray 10px solid;
+    grid-area: matter;
+}
